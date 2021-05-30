@@ -43,11 +43,12 @@ const mainTemplate = [
                     child: [
                       {
                         el: 'button',
-                        classNames: 'menu__btn menu__btn-about',
+                        classNames: 'menu__btn menu__btn-about menu__btn-active',
                         child: [
                           {
                             el: 'div',
                             classNames: 'menu__icon menu__icon-about',
+                            text: '?',
                           },
                           {
                             el: 'p',
@@ -68,7 +69,13 @@ const mainTemplate = [
                         child: [
                           {
                             el: 'div',
-                            classNames: 'menu__icon menu__icon-score',
+                            classNames: 'menu__icon menu__icon-transparent',
+                            child: [
+                              {
+                                el: 'div',
+                                classNames: 'menu__icon-score',
+                              },
+                            ],
                           },
                           {
                             el: 'p',
@@ -89,7 +96,13 @@ const mainTemplate = [
                         child: [
                           {
                             el: 'div',
-                            classNames: 'menu__icon menu__icon-settings',
+                            classNames: 'menu__icon',
+                            child: [
+                              {
+                                el: 'div',
+                                classNames: 'menu__icon-settings',
+                              },
+                            ],
                           },
                           {
                             el: 'p',
