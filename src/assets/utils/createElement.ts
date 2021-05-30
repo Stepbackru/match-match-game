@@ -4,7 +4,7 @@ class CreateElement {
   public elements: HTMLElement[] = [];
 
   public getElements(): HTMLElement[] {
-    return this.elements.slice();
+    return new Array(...this.elements);
   }
 
   public clearElements(): void {
@@ -34,7 +34,6 @@ class CreateElement {
     if (args.child && Array.isArray(args.child)) {
       args.child.forEach((child: ObjInterface) => {
         element.appendChild(this.add(child));
-        this.elements.push(element);
       });
     }
 
@@ -61,6 +60,8 @@ class CreateElement {
         }
       });
     }
+
+    this.elements.push(element);
 
     return element;
   }
