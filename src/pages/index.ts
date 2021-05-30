@@ -2,6 +2,7 @@ import ObjInterface from '../assets/interfaces/interfaceRender';
 import elem from '../assets/utils/createElement';
 import mainTemplate from '../assets/data/mainTemplate';
 import aboutPage from './about/about';
+import './style.scss';
 
 export default class Main {
   private elements: HTMLElement[] = [];
