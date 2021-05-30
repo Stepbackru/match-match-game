@@ -1,5 +1,64 @@
-.test {
-  width: 500px;
-  height: 500px;
-  background: #000;
+.about {
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  
+  &__caption {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  &__item {
+    padding: 20px 0;
+    min-height: 130px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    padding: 15px;
+    width: 360px;
+    display: flex;
+    border-radius: 5px;
+    background: #ffffff;
+  }
+
+  &__number {
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    color:#ffffff;
+    border-radius: 50%;
+    background: #2196F3;
+    -webkit-box-shadow: 1px 3px 4px 0px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 1px 3px 4px 0px rgba(34, 60, 80, 0.6);
+    box-shadow: 1px 3px 4px 0px rgba(34, 60, 80, 0.6);
+  }
+
+  &__info {
+    width: 275px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    word-wrap: break-word;
+  }
+
+  &__example {
+    width: 300px;
+    height: 220px;
+    background-size: 100%;
+  }
+  &__example-reg {
+    background-image: url(../../assets/images/about/example_1.png);
+  }
+  &__example-settings {
+    width: 110px;
+    height: 68px;
+    background-image: url(../../assets/images/about/example_2.png);
+  }
+  &__example-start {
+    background-image: url(../../assets/images/about/example_3.png);
+  }
 }
