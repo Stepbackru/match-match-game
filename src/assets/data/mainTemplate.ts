@@ -124,6 +124,17 @@ const mainTemplate = [
       },
     ],
   },
+  {
+    el: 'main',
+    classNames: 'main',
+    parent: 'body',
+    child: [
+      {
+        el: 'div',
+        classNames: 'wrapper',
+      },
+    ],
+  },
 ];
 
 export default mainTemplate;
