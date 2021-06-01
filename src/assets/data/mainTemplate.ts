@@ -42,8 +42,9 @@ const mainTemplate = [
                     classNames: 'menu__item',
                     child: [
                       {
-                        el: 'button',
+                        el: 'a',
                         classNames: 'menu__btn menu__btn-about menu__btn-active',
+                        dataAttr: [['href', '#about']],
                         child: [
                           {
                             el: 'div',
@@ -64,8 +65,9 @@ const mainTemplate = [
                     classNames: 'menu__item',
                     child: [
                       {
-                        el: 'button',
+                        el: 'a',
                         classNames: 'menu__btn menu__btn-score',
+                        dataAttr: [['href', '#score']],
                         child: [
                           {
                             el: 'div',
@@ -91,8 +93,9 @@ const mainTemplate = [
                     classNames: 'menu__item',
                     child: [
                       {
-                        el: 'button',
+                        el: 'a',
                         classNames: 'menu__btn menu__btn-settings',
+                        dataAttr: [['href', '#settings']],
                         child: [
                           {
                             el: 'div',
