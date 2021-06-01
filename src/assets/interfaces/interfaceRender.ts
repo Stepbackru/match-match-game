@@ -3,6 +3,6 @@ export default interface ObjInterface {
   classNames?: string;
   parent?: string;
   text?: string;
-  dataAttr?: [string[]];
+  dataAttr?: string[][];
   child?: ObjInterface[];
 }
