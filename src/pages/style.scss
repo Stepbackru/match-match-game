@@ -129,6 +129,25 @@ body {
   }
 }
 
+.user {
+  display: flex;
+
+  &__sign {
+    margin: 5px;
+    width: 120px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 10px;
+    background: #1E88E5;
+
+    &:hover {
+      background: #1d86db;
+    }
+  }
+}
+
 .main {
   padding-top: 50px;
 
