@@ -43,7 +43,7 @@ const mainTemplate = [
                     child: [
                       {
                         el: 'a',
-                        classNames: 'menu__btn menu__btn-about menu__btn-active',
+                        classNames: 'menu__btn menu__btn-about',
                         dataAttr: [['href', '#about']],
                         child: [
                           {
