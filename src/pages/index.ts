@@ -3,6 +3,7 @@ import elem from '../assets/utils/createElement';
 import mainTemplate from '../assets/data/mainTemplate';
 import aboutPage from './about/about';
 import register from './modals/register';
+import Router from '../assets/utils/router';
 import './style.scss';
 
 export default class Main {
@@ -14,6 +15,9 @@ export default class Main {
 
   public init(): void {
     this.subscribe();
+
+    this.addActiveClassLink();
+    Router.init();
   }
 
   public render(): void {
@@ -29,7 +33,7 @@ export default class Main {
     });
   }
 
-  private changeActiveButton(e: MouseEvent): void {
+  public changeActiveButton(e: MouseEvent): void {
     const item = e.currentTarget as HTMLElement;
     const btnArr = this.elements.filter((el) => el.classList.contains('menu__btn'));
 
@@ -43,5 +47,12 @@ export default class Main {
     });
     this.elements = elem.getElements();
     elem.clearElements();
+  }
+
+  private addActiveClassLink(): void {
+    const hash = window.location.hash ? window.location.hash.slice(1) : '';
+    const menuBtns = this.elements.filter((el) => el.classList.contains('menu__btn'));
+
+    Router.activeLinkAfterRefresh(hash, menuBtns);
   }
 }
